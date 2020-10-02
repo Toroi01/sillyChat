@@ -1,5 +1,5 @@
 var server = new SillyClient();
-server.connect( "wss://tamats.com" + ":55000", "JPC_CHAT");
+server.connect( "wss://"wss://yourserver" + ":PORT", "CHAT_NAME");
 var prev_user_name = "";
 
 var users_connected = {}
