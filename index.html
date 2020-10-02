@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>Chat &#128172</title>
+        <link type="text/css" rel="stylesheet" media="all" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+        <script src="sillyclient.js"></script>  
+    </head>
+    <body onload=refresh_user_room()>
+        <div class="grid-container">
+            <div class="title-channels">
+                <h4 id="#channel">&#128100 Username & Channels &#128226</h4>
+            </div>
+            <div class="title-chat">
+                <h1 class="header">Chat &#128172</h1>
+            </div>
+            <div class="title-users">
+                <h4 >Users &#128523</h4>
+            </div>
+            
+            <div class="channels">
+                <div id="container-user-name-title">
+                    <h5 id="current-user-name">User name</h5>
+                </div>
+                <input id="input-user_name" type="text" name="fname" placeholder="New username..."> 
+                <button id="update-user-name" onclick=change_user_name()>Update</button>
+
+                <div id="container-user-name-title">
+                    <h5 id="current-room-name">Channel code</h5>
+                </div>
+                <input id="input-room_name" type="text" name="fname" placeholder="Channel's name.."> 
+                <button id="update-room" onclick=change_room()>Update</button>
+            </div>
+            <div class="users-connected" id="users-connected">
+            </div>
+            <div class="chat" id="chat"></div>
+            <div class="input-chat" id="input-chat-container">
+                    <img src="" class="avatar" id="profile-image">
+                    <input id="input_chat" type="text" name="fname" onkeypress=is_Enter() placeholder="Write here...">  
+                    <button id="zumbido-button" onclick=send_zumbido()></button>
+                    <button id="send_button" onclick=send_msg()>Send</button>
+            </div>
+        </div>  
+
+		<script type="text/javascript" src="code.js"></script>
+    </body onload=refr  >
+</html>
